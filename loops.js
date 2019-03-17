@@ -8,7 +8,11 @@ function forLoop(arr) {
 }
 
 function whileLoop(num) {
-  while (num >= 0) {
+  if (num == 0) {
+    console.log("I run once regardless.");
+  }
+  
+  while (num > 0) {
     console.log(num -= 1);
   }
   return 'done';
